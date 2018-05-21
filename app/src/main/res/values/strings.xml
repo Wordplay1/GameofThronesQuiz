@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Game of Thrones Quiz</string>
+    <string name="title">Game of Thrones Quiz</string>
+    <string name="westoros">Westoros</string>
+    <string name="middleearth">Middle Earth</string>
+    <string name="azeroth">Azeroth</string>
+    <string name="Camelot">Camelot</string>
+    <string name="khaleesi">"What does &quot;Khaleesi&quot; mean?"</string>
+    <string name="warrior">Warrior</string>
+    <string name="wife">Wife of the Khal</string>
+    <string name="mother">Mother</string>
+    <string name="queen">Queen</string>
+</resources>

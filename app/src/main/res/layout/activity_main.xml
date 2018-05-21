@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/darkbackgrounds">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:src="@mipmap/gameofthrones" />
+
+        <TextView
+            android:id="@+id/quizName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/title"
+            android:paddingBottom="8dp"
+            android:textColor="#FFEBEE"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Please enter name:"
+            android:textColor="#FFEBEE" />
+
+        <EditText
+            android:id="@+id/name_input_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter here"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="In what world does the show Game of Thrones exist?"
+            android:textColor="#FFEBEE" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="8dp"
+                android:text="@string/westoros"
+                android:textColor="#FFEBEE" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="8dp"
+                android:text="@string/middleearth"
+                android:textColor="#FFEBEE" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="8dp"
+                android:text="@string/azeroth"
+                android:textColor="#FFEBEE" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="8dp"
+                android:text="@string/Camelot"
+                android:textColor="#FFEBEE" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/khaleesi"
+            android:textColor="#FFEBEE" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFEBEE"
+            android:padding="8dp"
+            android:text="@string/wife"
+            android:textColor="#FFEBEE" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFEBEE"
+            android:padding="8dp"
+            android:text="@string/mother"
+            android:textColor="#FFEBEE" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFEBEE"
+            android:padding="8dp"
+            android:text="@string/warrior"
+            android:textColor="#FFEBEE" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFEBEE"
+            android:padding="8dp"
+            android:text="@string/queen"
+            android:textColor="#FFEBEE" />
+
+    </LinearLayout>
+</ScrollView>
