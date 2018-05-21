@@ -14,7 +14,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingBottom="@dimen/spacePadding"
             android:scaleType="centerCrop"
             android:src="@mipmap/gameofthrones" />
 
@@ -22,50 +21,57 @@
             android:id="@+id/quizName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacePadding"
+            android:layout_marginTop="@dimen/spacePadding"
+            android:layout_weight="1"
             android:gravity="center"
-            android:paddingBottom="@dimen/spacePadding"
-            android:paddingTop="@dimen/spacePadding"
             android:text="@string/title"
-            android:textColor="#FFEBEE"
+            android:textColor="@color/mainText"
             android:textSize="25sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:fontFamily="sans-serif-condensed"
             android:paddingLeft="@dimen/sidePadding"
             android:paddingTop="@dimen/spacePadding"
-            android:text="Please enter name:"
-            android:textColor="#FFEBEE" />
+            android:text="@string/editTextTitle"
+            android:textColor="@color/mainText" />
 
         <EditText
             android:id="@+id/name_input_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter here"
-            android:inputType="textCapWords" />
+            android:inputType="textCapWords"
+            android:paddingBottom="@dimen/spacePadding"
+            android:paddingTop="@dimen/spacePadding" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/questionMarginTop"
+            android:layout_weight="1"
             android:paddingLeft="@dimen/sidePadding"
-            android:text="In what world does the show Game of Thrones exist?"
-            android:textColor="#FFEBEE" />
+            android:text="@string/questionOne"
+            android:textColor="@color/mainText"
+            android:textSize="@dimen/questionText" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/spacePadding">
+            android:paddingLeft="@dimen/sidePadding">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="#FFEBEE"
+                android:buttonTint="@color/mainText"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/westoros"
-                android:textColor="#FFEBEE" />
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -73,70 +79,83 @@
                 android:buttonTint="#FFEBEE"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/middleearth"
-                android:textColor="#FFEBEE" />
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="#FFEBEE"
+                android:buttonTint="@color/mainText"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/azeroth"
-                android:textColor="#FFEBEE" />
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="#FFEBEE"
+                android:buttonTint="@color/mainText"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/Camelot"
-                android:textColor="#FFEBEE" />
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
 
         </RadioGroup>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/questionMarginTop"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/sidePadding"
             android:text="@string/khaleesi"
-            android:textColor="#FFEBEE" />
+            android:textColor="@color/mainText"
+            android:textSize="@dimen/questionText" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/spacePadding" />
+            android:paddingLeft="@dimen/sidePadding">
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="#FFEBEE"
-            android:padding="@dimen/spacePadding"
-            android:text="@string/wife"
-            android:textColor="#FFEBEE" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/wife"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="#FFEBEE"
-            android:padding="@dimen/spacePadding"
-            android:text="@string/mother"
-            android:textColor="#FFEBEE" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/mother"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="#FFEBEE"
-            android:padding="@dimen/spacePadding"
-            android:text="@string/warrior"
-            android:textColor="#FFEBEE" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/warrior"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="#FFEBEE"
-            android:padding="@dimen/spacePadding"
-            android:text="@string/queen"
-            android:textColor="#FFEBEE" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/queen"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
+
+        </RadioGroup>
 
     </LinearLayout>
 </ScrollView>

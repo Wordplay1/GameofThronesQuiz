@@ -10,4 +10,6 @@
     <string name="wife">Wife of the Khal</string>
     <string name="mother">Mother</string>
     <string name="queen">Queen</string>
+    <string name="editTextTitle">Please enter name:</string>
+    <string name="questionOne">In what world does the show Game of Thrones exist?</string>
 </resources>
