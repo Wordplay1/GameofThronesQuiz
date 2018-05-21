@@ -65,36 +65,44 @@
             android:paddingLeft="@dimen/sidePadding">
 
             <RadioButton
+                android:id="@+id/radio_westoros"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/mainText"
+                android:onClick="radioQuestionOne"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/westoros"
                 android:textColor="@color/mainText"
                 android:textSize="@dimen/questionText" />
 
             <RadioButton
+                android:id="@+id/radio_middleearth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="#FFEBEE"
+                android:onClick="radioQuestionOne"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/middleearth"
                 android:textColor="@color/mainText"
                 android:textSize="@dimen/questionText" />
 
             <RadioButton
+                android:id="@+id/radio_azeroth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/mainText"
+                android:onClick="radioQuestionOne"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/azeroth"
                 android:textColor="@color/mainText"
                 android:textSize="@dimen/questionText" />
 
             <RadioButton
+                android:id="@+id/radio_camelot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/mainText"
+                android:onClick="radioQuestionOne"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/Camelot"
                 android:textColor="@color/mainText"
@@ -120,36 +128,44 @@
             android:paddingLeft="@dimen/sidePadding">
 
             <RadioButton
+                android:id="@+id/radio_wife"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="#FFEBEE"
+                android:buttonTint="@color/mainText"
+                android:onClick="radioQuestionTwo"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/wife"
                 android:textColor="@color/mainText"
                 android:textSize="@dimen/questionText" />
 
             <RadioButton
+                android:id="@+id/radio_mother"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="#FFEBEE"
+                android:onClick="radioQuestionTwo"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/mother"
                 android:textColor="@color/mainText"
                 android:textSize="@dimen/questionText" />
 
             <RadioButton
+                android:id="@+id/radio_warrior"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/mainText"
+                android:onClick="radioQuestionTwo"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/warrior"
                 android:textColor="@color/mainText"
                 android:textSize="@dimen/questionText" />
 
             <RadioButton
+                android:id="@+id/radio_queen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/mainText"
+                android:onClick="radioQuestionTwo"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/queen"
                 android:textColor="@color/mainText"
