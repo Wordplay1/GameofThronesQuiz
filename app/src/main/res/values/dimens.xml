@@ -3,5 +3,5 @@
     <dimen name="spacePadding">8dp</dimen>
     <dimen name="sidePadding">8dp</dimen>
     <dimen name="questionText">18sp</dimen>
-    <dimen name="questionMarginTop">16sp</dimen>
+    <dimen name="questionMarginTop">16dp</dimen>
 </resources>

@@ -5,11 +5,17 @@
     <string name="middleearth">Middle Earth</string>
     <string name="azeroth">Azeroth</string>
     <string name="Camelot">Camelot</string>
-    <string name="khaleesi">"What does &quot;Khaleesi&quot; mean?"</string>
+    <string name="questionsTwo">"What does &quot;Khaleesi&quot; mean?"</string>
     <string name="warrior">Warrior</string>
     <string name="wife">Wife of the Khal</string>
     <string name="mother">Mother</string>
     <string name="queen">Queen</string>
     <string name="editTextTitle">Please enter name:</string>
     <string name="questionOne">In what world does the show Game of Thrones exist?</string>
+    <string name="submitButton">Submit Quiz</string>
+    <string name="questionThree">Who was the Iron Throne originally made for?</string>
+    <string name="aegon">Aegon I Targaryen</string>
+    <string name="robert">Robert Baratheon</string>
+    <string name="eddard">Eddard Stark</string>
+    <string name="rhaegar">Rhaegar Targaryem</string>
 </resources>
