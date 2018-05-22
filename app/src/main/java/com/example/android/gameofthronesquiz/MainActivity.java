@@ -65,9 +65,35 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void radioQuestionFour(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+
+        switch (view.getId()) {
+            case R.id.radio_moore:
+                if (checked) {
+                    points += 1;
+                }
+            default:
+                points += 0;
+        }
+    }
+
+    public void radioQuestionFive(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+
+        switch (view.getId()) {
+            case R.id.radio_hound:
+                if (checked) {
+                    points += 1;
+                }
+            default:
+                points += 0;
+        }
+    }
+
     public void submitQuiz(View view){
-        if(points == 3){
-            String resultsScore = "You scored " + points + " out of 2!";
+        if(points == 5){
+            String resultsScore = "You scored " + points + " out of 5!";
             Toast.makeText(this, resultsScore, Toast.LENGTH_LONG).show();
         }
     }

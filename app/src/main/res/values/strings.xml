@@ -5,7 +5,7 @@
     <string name="middleearth">Middle Earth</string>
     <string name="azeroth">Azeroth</string>
     <string name="Camelot">Camelot</string>
-    <string name="questionsTwo">"What does &quot;Khaleesi&quot; mean?"</string>
+    <string name="questionsTwo">"What does \"Khaleesi\" mean?"</string>
     <string name="warrior">Warrior</string>
     <string name="wife">Wife of the Khal</string>
     <string name="mother">Mother</string>
@@ -18,4 +18,11 @@
     <string name="robert">Robert Baratheon</string>
     <string name="eddard">Eddard Stark</string>
     <string name="rhaegar">Rhaegar Targaryem</string>
+    <string name="questionFour">Who attempts to kill Tyrion Lannister on the Battle of Blackwater Bay?</string>
+    <string name="mandenMoore">Ser Mandon Moore</string>
+    <string name="joffrey">Joffrey Baratheon</string>
+    <string name="questionFive">Who saves Sansa Stark during the Riots of King\'s Landing?</string>
+    <string name="hound">The Hound</string>
+    <string name="tyrion">Tyrion Lannister</string>
+    <string name="baelish">Petyr Baelish</string>
 </resources>
