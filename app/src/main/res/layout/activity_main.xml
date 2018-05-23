@@ -183,6 +183,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:scaleType="centerCrop"
             android:src="@mipmap/ironthrone" />
 
         <TextView
@@ -364,6 +365,74 @@
                 android:onClick="radioQuestionFive"
                 android:padding="@dimen/spacePadding"
                 android:text="@string/hound"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:paddingTop="@dimen/questionMarginTop"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:src="@mipmap/khaleesi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/questionMarginTop"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/spacePadding"
+            android:paddingLeft="@dimen/sidePadding"
+            android:text="@string/questionSix"
+            android:textColor="@color/mainText"
+            android:textSize="@dimen/questionText" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sidePadding">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:onClick="radioQuestionFive"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/dragon1"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:onClick="radioQuestionFive"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/dragon2"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:onClick="radioQuestionFive"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/dragon3"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText" />
+
+            <RadioButton
+                android:id="@+id/radio_dragon4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:onClick="radioQuestionFive"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/dragon4"
                 android:textColor="@color/mainText"
                 android:textSize="@dimen/questionText" />
 

@@ -91,9 +91,22 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void radioQuestionSix(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+
+        switch (view.getId()) {
+            case R.id.radio_dragon4:
+                if (checked) {
+                    points += 1;
+                }
+            default:
+                points += 0;
+        }
+    }
+
     public void submitQuiz(View view){
-        if(points == 5){
-            String resultsScore = "You scored " + points + " out of 5!";
+        if(points == 6){
+            String resultsScore = "You scored " + points + " out of 6!";
             Toast.makeText(this, resultsScore, Toast.LENGTH_LONG).show();
         }
     }

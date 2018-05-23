@@ -25,4 +25,9 @@
     <string name="hound">The Hound</string>
     <string name="tyrion">Tyrion Lannister</string>
     <string name="baelish">Petyr Baelish</string>
+    <string name="questionSix">Which of Daenerys Targaryen\'s three dragons are the largest?</string>
+    <string name="dragon1">RHAEGAL</string>
+    <string name="dragon2">DROGAL</string>
+    <string name="dragon3">VISERION</string>
+    <string name="dragon4">BALERION</string>
 </resources>
