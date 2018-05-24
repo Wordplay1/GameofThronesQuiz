@@ -64,6 +64,7 @@
             android:textSize="@dimen/questionText" />
 
         <RadioGroup
+            android:id="@+id/radio_group1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/sidePadding">
@@ -406,6 +407,7 @@
                 android:textSize="@dimen/questionText" />
 
             <RadioButton
+                android:id="@+id/radio_dragon2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="#FFEBEE"
@@ -426,7 +428,6 @@
                 android:textSize="@dimen/questionText" />
 
             <RadioButton
-                android:id="@+id/radio_dragon4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/mainText"

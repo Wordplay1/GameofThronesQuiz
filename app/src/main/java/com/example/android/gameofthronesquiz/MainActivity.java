@@ -5,12 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int points = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,92 +23,36 @@ public class MainActivity extends AppCompatActivity {
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Game of Thrones.ttf");
         name.setTypeface(font);
 
+        RadioButton oneRadioButton = findViewById(R.id.radio_westoros);
+        boolean questionOne = oneRadioButton.isChecked();
+
+        RadioButton twoRadioButton = findViewById(R.id.radio_wife);
+        boolean questionTwo = twoRadioButton.isChecked();
+
+        RadioButton threeRadioButton = findViewById(R.id.radio_aegon);
+        boolean questionThree = threeRadioButton.isChecked();
+
+        RadioButton fourRadioButton = findViewById(R.id.radio_moore);
+        boolean questionsFour = fourRadioButton.isChecked();
+
+        RadioButton fiveRadioButton = findViewById(R.id.radio_hound);
+        boolean questionFive = fiveRadioButton.isChecked();
+
+        RadioButton sixRadioButton = findViewById(R.id.radio_dragon2);
+        boolean questionSix = fourRadioButton.isChecked();
+
+        int score = calculateScore(questionOne,questionTwo,questionThree,questionsFour,questionFive,questionSix);
+
 
     }
 
-    public void radioQuestionOne(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
 
-        switch (view.getId()) {
-            case R.id.radio_westoros:
-                if (checked) {
-                    points += 1;
-                }
-                break;
-            default:
-                points += 0;
-        }
-    }
-
-    public void radioQuestionTwo(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
-
-        switch (view.getId()) {
-            case R.id.radio_wife:
-                if (checked) {
-                    points += 1;
-                }
-            default:
-                points += 0;
-        }
-    }
-
-    public void radioQuestionThree(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
-
-        switch (view.getId()) {
-            case R.id.radio_aegon:
-                if (checked) {
-                    points += 1;
-                }
-            default:
-                points += 0;
-        }
-    }
-
-    public void radioQuestionFour(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
-
-        switch (view.getId()) {
-            case R.id.radio_moore:
-                if (checked) {
-                    points += 1;
-                }
-            default:
-                points += 0;
-        }
-    }
-
-    public void radioQuestionFive(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
-
-        switch (view.getId()) {
-            case R.id.radio_hound:
-                if (checked) {
-                    points += 1;
-                }
-            default:
-                points += 0;
-        }
-    }
-
-    public void radioQuestionSix(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
-
-        switch (view.getId()) {
-            case R.id.radio_dragon4:
-                if (checked) {
-                    points += 1;
-                }
-            default:
-                points += 0;
-        }
-    }
-
-    public void submitQuiz(View view){
-        if(points == 6){
+    public int calculateScore(boolean one, boolean two, boolean three, boolean four, boolean five, boolean six) {
+        if (points == 6) {
+            /*
             String resultsScore = "You scored " + points + " out of 6!";
             Toast.makeText(this, resultsScore, Toast.LENGTH_LONG).show();
+            */
         }
     }
 }
