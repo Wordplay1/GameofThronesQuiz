@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@mipmap/darkbackgrounds">
@@ -38,7 +39,8 @@
             android:paddingLeft="@dimen/sidePadding"
             android:paddingTop="@dimen/spacePadding"
             android:text="@string/editTextTitle"
-            android:textColor="@color/mainText" />
+            android:textColor="@color/mainText"
+            app:fontFamily="@font/marcellus_sc" />
 
         <EditText
             android:id="@+id/name_input_view"
@@ -49,7 +51,8 @@
             android:paddingBottom="@dimen/spacePadding"
             android:paddingTop="@dimen/spacePadding"
             android:textColor="#BDBDBD"
-            android:textColorHint="#BDBDBD" />
+            android:textColorHint="#BDBDBD"
+            app:fontFamily="@font/marcellus_sc" />
 
         <TextView
             android:layout_width="match_parent"
@@ -61,7 +64,8 @@
             android:paddingLeft="@dimen/sidePadding"
             android:text="@string/questionOne"
             android:textColor="@color/mainText"
-            android:textSize="@dimen/questionText" />
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
 
         <RadioGroup
             android:id="@+id/radio_group1"
@@ -77,7 +81,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/westoros"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_middleearth"
@@ -87,7 +92,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/middleearth"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_azeroth"
@@ -97,7 +103,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/azeroth"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_camelot"
@@ -107,7 +114,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/Camelot"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
         </RadioGroup>
 
@@ -122,7 +130,8 @@
             android:paddingLeft="@dimen/sidePadding"
             android:text="@string/questionsTwo"
             android:textColor="@color/mainText"
-            android:textSize="@dimen/questionText" />
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -138,7 +147,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/wife"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_mother"
@@ -148,7 +158,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/mother"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_warrior"
@@ -158,7 +169,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/warrior"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_queen"
@@ -168,7 +180,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/queen"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
         </RadioGroup>
 
@@ -189,7 +202,8 @@
             android:paddingLeft="@dimen/sidePadding"
             android:text="@string/questionThree"
             android:textColor="@color/mainText"
-            android:textSize="@dimen/questionText" />
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -204,7 +218,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/robert"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_rhaegar"
@@ -214,7 +229,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/rhaegar"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_aegon"
@@ -224,7 +240,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/aegon"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_eddard"
@@ -234,7 +251,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/eddard"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
         </RadioGroup>
 
@@ -248,7 +266,8 @@
             android:paddingLeft="@dimen/sidePadding"
             android:text="@string/questionFour"
             android:textColor="@color/mainText"
-            android:textSize="@dimen/questionText" />
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -262,7 +281,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/eddard"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_moore"
@@ -272,7 +292,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/mandenMoore"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -281,7 +302,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/rhaegar"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_joffrey"
@@ -291,7 +313,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/joffrey"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
         </RadioGroup>
 
@@ -305,7 +328,8 @@
             android:paddingLeft="@dimen/sidePadding"
             android:text="@string/questionFive"
             android:textColor="@color/mainText"
-            android:textSize="@dimen/questionText" />
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -319,7 +343,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/tyrion"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -328,7 +353,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/joffrey"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -337,7 +363,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/baelish"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_hound"
@@ -347,7 +374,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/hound"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
         </RadioGroup>
 
@@ -362,14 +390,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/questionMarginTop"
             android:layout_gravity="center"
-            android:paddingBottom="@dimen/spacePadding"
+            android:layout_marginTop="@dimen/questionMarginTop"
             android:layout_weight="1"
-            android:text="@string/questionSix"
+            android:paddingBottom="@dimen/spacePadding"
             android:paddingLeft="@dimen/sidePadding"
+            android:text="@string/questionSix"
             android:textColor="@color/mainText"
-            android:textSize="@dimen/questionText" />
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -383,7 +412,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/dragon1"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:id="@+id/radio_dragon2"
@@ -393,7 +423,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/dragon2"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -402,7 +433,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/dragon3"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -411,7 +443,8 @@
                 android:padding="@dimen/spacePadding"
                 android:text="@string/dragon4"
                 android:textColor="@color/mainText"
-                android:textSize="@dimen/questionText" />
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
 
         </RadioGroup>
 
@@ -425,7 +458,8 @@
             android:paddingTop="@dimen/questionMarginTop"
             android:text="@string/submitButton"
             android:textAllCaps="true"
-            android:textColor="@color/mainText" />
+            android:textColor="@color/mainText"
+            app:fontFamily="@font/marcellus_sc" />
 
     </LinearLayout>
 </ScrollView>
