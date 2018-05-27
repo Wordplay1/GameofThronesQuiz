@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/darkbackgrounds">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/questionMarginTop"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/gameofthrones" />
+
+        <TextView
+            android:id="@+id/quizName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacePadding"
+            android:layout_marginTop="@dimen/spacePadding"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textColor="@color/mainText"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="@dimen/sidePadding"
+            android:paddingTop="@dimen/spacePadding"
+            android:text="@string/editTextTitle"
+            android:textColor="@color/mainText"
+            app:fontFamily="@font/marcellus_sc" />
+
+        <EditText
+            android:id="@+id/name_input_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter here..."
+            android:inputType="textCapWords"
+            android:paddingBottom="@dimen/spacePadding"
+            android:paddingTop="@dimen/spacePadding"
+            android:textColor="#BDBDBD"
+            android:textColorHint="#BDBDBD"
+            app:fontFamily="@font/marcellus_sc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/questionMarginTop"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/spacePadding"
+            android:paddingLeft="@dimen/sidePadding"
+            android:text="@string/questionOne"
+            android:textColor="@color/mainText"
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
+
+        <RadioGroup
+            android:id="@+id/radio_group1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sidePadding">
+
+            <RadioButton
+                android:id="@+id/radio_westoros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/westoros"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_middleearth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/middleearth"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_azeroth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/azeroth"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_camelot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/Camelot"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/questionMarginTop"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/spacePadding"
+            android:paddingLeft="@dimen/sidePadding"
+            android:text="@string/questionsTwo"
+            android:textColor="@color/mainText"
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/questionMarginTop"
+            android:paddingLeft="@dimen/sidePadding">
+
+            <RadioButton
+                android:id="@+id/radio_wife"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/wife"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_mother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/mother"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_warrior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/warrior"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_queen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/queen"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ironthrone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/questionMarginTop"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/spacePadding"
+            android:paddingLeft="@dimen/sidePadding"
+            android:text="@string/questionThree"
+            android:textColor="@color/mainText"
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sidePadding">
+
+            <RadioButton
+                android:id="@+id/radio_robert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/robert"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_rhaegar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/rhaegar"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_aegon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/aegon"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_eddard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/eddard"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/questionMarginTop"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/spacePadding"
+            android:paddingLeft="@dimen/sidePadding"
+            android:text="@string/questionFour"
+            android:textColor="@color/mainText"
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sidePadding">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/eddard"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_moore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/mandenMoore"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/rhaegar"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_joffrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/joffrey"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/questionMarginTop"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/spacePadding"
+            android:paddingLeft="@dimen/sidePadding"
+            android:text="@string/questionFive"
+            android:textColor="@color/mainText"
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sidePadding">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/tyrion"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/joffrey"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/baelish"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_hound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/hound"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/questionMarginTop"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/khaleesi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/questionMarginTop"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/spacePadding"
+            android:paddingLeft="@dimen/sidePadding"
+            android:text="@string/questionSix"
+            android:textColor="@color/mainText"
+            android:textSize="@dimen/questionText"
+            app:fontFamily="@font/marcellus_sc" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sidePadding">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/dragon1"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:id="@+id/radio_dragon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFEBEE"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/dragon2"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/dragon3"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainText"
+                android:padding="@dimen/spacePadding"
+                android:text="@string/dragon4"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/questionText"
+                app:fontFamily="@font/marcellus_sc" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="submitQuiz"
+            android:paddingBottom="@dimen/spacePadding"
+            android:paddingTop="@dimen/questionMarginTop"
+            android:text="@string/submitButton"
+            android:textAllCaps="true"
+            android:textColor="@color/mainText"
+            app:fontFamily="@font/marcellus_sc" />
+
+    </LinearLayout>
+</ScrollView>
