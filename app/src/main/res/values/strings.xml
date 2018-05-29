@@ -27,7 +27,13 @@
     <string name="baelish">Petyr Baelish</string>
     <string name="questionSix">Which of Daenerys Targaryen\'s three dragons are the largest?</string>
     <string name="dragon1">Rhaegal</string>
-    <string name="dragon2">Drogan</string>
+    <string name="dragon2">Drogon</string>
     <string name="dragon3">Viserion</string>
     <string name="dragon4">Balerion</string>
+    <string name="questionSeven">Select the correct names of Daenerys Targaryen\'s three dragons.</string>
+    <string name="questionEight">Which two books below were NOT written by George R.R. Martin?</string>
+    <string name="book1">The Winds of Winter</string>
+    <string name="book2">A Clash of Kings</string>
+    <string name="book3">The Fires of Heaven</string>
+    <string name="book4">A Crown of Swords</string>
 </resources>

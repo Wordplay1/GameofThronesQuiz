@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -77,7 +78,34 @@ public class MainActivity extends AppCompatActivity {
         RadioButton sixRadioButton = findViewById(R.id.radio_dragon2);
         boolean questionSix = sixRadioButton.isChecked();
 
+        CheckBox dragonOneCheckBox = (CheckBox) findViewById(R.id.check_dragon1);
+        boolean dragonOne = dragonOneCheckBox.isChecked();
+
+        CheckBox dragonTwoCheckBox = (CheckBox) findViewById(R.id.check_dragon2);
+        boolean dragonTwo = dragonTwoCheckBox.isChecked();
+
+        CheckBox dragonThreeCheckBox = (CheckBox) findViewById(R.id.check_dragon3);
+        boolean dragonThree = dragonThreeCheckBox.isChecked();
+
+        CheckBox dragonFourCheckBox = (CheckBox) findViewById(R.id.check_dragon4);
+        boolean dragonFour = dragonFourCheckBox.isChecked();
+
+        CheckBox bookOneCheckBox = (CheckBox) findViewById(R.id.check_book1);
+        boolean bookOne = bookOneCheckBox.isChecked();
+
+        CheckBox bookTwoCheckBox = (CheckBox) findViewById(R.id.check_book2);
+        boolean bookTwo = bookTwoCheckBox.isChecked();
+
+        CheckBox bookThreeCheckBox = (CheckBox) findViewById(R.id.check_book3);
+        boolean bookThree = bookThreeCheckBox.isChecked();
+
+        CheckBox bookFourCheckBox = (CheckBox) findViewById(R.id.check_book4);
+        boolean bookFour = bookFourCheckBox.isChecked();
+
+
         score = calculateScore(questionOne, questionTwo, questionThree, questionsFour, questionFive, questionSix);
+        score += calculateCheckBox(dragonOne, dragonTwo, dragonThree, dragonFour);
+        score += calculateCheckBoxTwo(bookOne, bookTwo, bookThree, bookFour);
 
         printResults(name);
     }
@@ -103,6 +131,25 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, name + ", You scored " + score + " points. You are a true lord of the realm!", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    public int calculateCheckBox(boolean d1, boolean d2, boolean d3, boolean d4) {
+        int points = 0;
+        if (d1 && d2 && d3 && !d4) {
+            points = 1;
+        }
+       /* if (d4) {
+            points = 0;
+        }*/
+        return points;
+    }
+
+    public int calculateCheckBoxTwo(boolean b1, boolean b2, boolean b3, boolean b4) {
+        int points = 0;
+        if (!b1 && !b2 && b3 && b4) {
+            points = 1;
+        }
+        return points;
     }
 }
 
