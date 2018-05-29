@@ -20,7 +20,7 @@
             android:src="@mipmap/gameofthrones" />
 
         <TextView
-            android:id="@+id/quizName"
+            android:id="@+id/quiz_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/spacePadding"

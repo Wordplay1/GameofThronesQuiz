@@ -7,11 +7,9 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import javax.microedition.khronos.egl.EGLDisplay;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        TextView textName = (TextView) findViewById(R.id.quizName);
+        TextView textName = (TextView) findViewById(R.id.quiz_name);
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Game of Thrones.ttf");
         textName.setTypeface(font);
 
