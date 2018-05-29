@@ -117,18 +117,23 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(this, name + ", you scored " + score + " points. You may need to watch some more GoT!", Toast.LENGTH_SHORT).show();
             }
-
         } else if (score <= 4) {
+            if (name.trim().isEmpty()) {
+                Toast.makeText(this, "You scored " + score + " points. You are a GoT noble!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, name + ", You scored " + score + " You are a GoT noble!", Toast.LENGTH_SHORT).show();
+            }
+        } else if (score <= 6) {
             if (name.trim().isEmpty()) {
                 Toast.makeText(this, "You scored " + score + " points. You are a friend of the crown!", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(this, name + ", You scored " + score + " points. You are a friend of the crown!", Toast.LENGTH_SHORT).show();
             }
-        } else {
+        } else if (score <= 8) {
             if (name.trim().isEmpty()) {
-                Toast.makeText(this, "You scored " + score + " points. You are a true lord of the realm!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "You scored " + score + " points. You are a true LORD of the Realm!", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, name + ", You scored " + score + " points. You are a true lord of the realm!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, name + ", You scored " + score + " points. You are a true LORD of the Realm!", Toast.LENGTH_SHORT).show();
             }
         }
     }
