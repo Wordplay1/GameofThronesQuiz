@@ -448,17 +448,17 @@
         </RadioGroup>
 
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/questionMarginTop"
-        android:layout_weight="1"
-        android:fontFamily="@font/marcellus_sc"
-        android:paddingBottom="@dimen/spacePadding"
-        android:paddingLeft="@dimen/sidePadding"
-        android:text="@string/questionSeven"
-        android:textColor="@color/mainText"
-        android:textSize="@dimen/questionText" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/questionMarginTop"
+            android:layout_weight="1"
+            android:fontFamily="@font/marcellus_sc"
+            android:paddingBottom="@dimen/spacePadding"
+            android:paddingLeft="@dimen/sidePadding"
+            android:text="@string/questionSeven"
+            android:textColor="@color/mainText"
+            android:textSize="@dimen/questionText" />
 
         <CheckBox
             android:id="@+id/check_dragon1"
