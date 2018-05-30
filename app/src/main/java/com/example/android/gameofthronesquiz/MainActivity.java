@@ -101,9 +101,14 @@ public class MainActivity extends AppCompatActivity {
         boolean bookFour = bookFourCheckBox.isChecked();
 
 
+        EditText questionNineAnswer = findViewById(R.id.question_nine_answer);
+        String answer = questionNineAnswer.getText().toString();
+
+
         score = calculateScore(questionOne, questionTwo, questionThree, questionsFour, questionFive, questionSix);
         score += calculateCheckBox(dragonOne, dragonTwo, dragonThree, dragonFour);
         score += calculateCheckBoxTwo(bookOne, bookTwo, bookThree, bookFour);
+        score += calculateEditText(answer);
 
         printResults(name);
     }
@@ -152,6 +157,15 @@ public class MainActivity extends AppCompatActivity {
         if (!b1 && !b2 && b3 && b4) {
             points = 1;
         }
+        return points;
+    }
+
+    public int calculateEditText(String answer) {
+        int points = 0;
+
+        if (answer.equalsIgnoreCase("The Children of the Forest"))
+            points = 1;
+
         return points;
     }
 }
